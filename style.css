@@ -1,0 +1,110 @@
+/* google font link up */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@300;400&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --fastFont: 'Dancing Script', cursive;
+    --secndFont: 'Lato', sans-serif;
+    --fastColor: #242433;
+    --secndColor: #3f3e4f;
+    --fontColor: #d15050;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--fastColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calSection {
+    height: 60%;
+    width: 54%;
+    background-color: var(--secndColor);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.811);
+    padding: 5px 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.calSection header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calSection header > h4 {
+    font-family: var(--fastFont);
+    color: var(--fontColor);
+    font-size: 1.3rem;
+}
+.calSection header > .light {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.calSection > .inputBoxSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 22%;
+    border: 2px solid rgba(255, 0, 0, 0.275);
+    padding: 10px 20px;
+}
+
+.calSection > .inputBoxSection > input {
+    background: none;
+    width: 100%;
+    border: none;
+    color: #dddddd;
+}
+
+.calSection > .inputBoxSection > .dataEntry{
+    font-size: 2rem;
+    font-family: var(--secndFont);
+    color: #dddddd;
+}
+
+.calSection > .inputBoxSection > .result{
+    font-size: 1.2rem;
+    font-family: var(--secndFont);
+}
+
+.calSection > .allButtonSection {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+.calSection > .allButtonSection button {
+    border-radius: 5px;
+    background-color: var(--fastColor);
+    border: none;
+    color: var(--fontColor);
+    font-size: 1.3rem;
+    box-shadow: 1px 1px 1px var(--fontColor);
+    cursor: pointer;
+}
+
+.calSection .allButtonSection .togol {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
